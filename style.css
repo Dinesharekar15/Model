@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.befor{
+    height: 100%;
+    width: 100%;
+    background: url("bg-image.jpeg")center/cover no-repeat;
+    display: grid;
+    place-items: center;    
+}
+.banner{
+    
+    background:#fff;
+    text-align: center;
+    width: 520px;
+    padding: 60px 0;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+h1{
+   font-size: 4rem; 
+   color: hsl(209, 61%, 16%);
+   font-weight: bold;
+   margin-bottom: 30px;
+   letter-spacing: 4px;
+}
+.banner button{
+    background: hsl(205, 63%, 48%);
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.model-over{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(73, 166, 233, 0.5);
+    visibility: hidden;
+    z-index: -10;
+}
+.open-modal {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(73, 166, 233, 0.5);
+    visibility: visible;
+    z-index: 10;
+}
+
+.model-contant{
+    background: white;
+    height: 200px;
+    width: 520px;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.model-contant button{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: hsl(360, 67%, 44%);
+    transition:  all 0.3s linear;
+    cursor: pointer;
+
+}
+.model-contant button span{
+    font-weight: bold;
+    font-size: 35px;
+}
+.model-contant h2{
+    letter-spacing: 4px;
+    font-weight: bold
+}

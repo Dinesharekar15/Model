@@ -34,7 +34,7 @@ h1{
 }
 .banner button{
     background: hsl(205, 63%, 48%);
-    border: none;
+   border: 2px solid hsl(205, 63%, 48%);
     border-radius: 5px;
     padding: 8px;
     text-transform: uppercase;
@@ -42,6 +42,14 @@ h1{
     color: #fff;
     font-weight: 600;
     margin-top: 10px;
+}
+.banner button:hover{
+
+   background: #fff;
+   border: 2px solid hsl(205, 63%, 48%);
+   color:  hsl(205, 63%, 48%);
+   transition: all 0.4s;
+   
 }
 .model-over{
     height: 100%;
